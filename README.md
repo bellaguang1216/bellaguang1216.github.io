@@ -29,6 +29,12 @@
   <kbd><img src="examples/ssOfSite3.png"></kbd>
 </p>
 
+### Activity 4 Screenshots
+<p align="center"> 
+   <kbd><img src="examples/ssOfRepo4.png"></kbd>
+  <kbd><img src="examples/ssOfSite4.png"></kbd>
+</p>
+
 ### Website Preview
 <p align="center"> 
   <kbd>
