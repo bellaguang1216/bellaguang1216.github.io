@@ -38,7 +38,8 @@
 ### Activity 5 Screenshots
 <p align="center"> 
    <kbd><img src="examples/ssOfRepo5.png"></kbd>
-  <kbd><img src="examples/ssOfSite5.png"></kbd>
+  <kbd><img src="examples/ssOf3Projects.png"></kbd>
+
 </p>
 
 ### Website Preview
