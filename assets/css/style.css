@@ -320,7 +320,7 @@ h3 {
 } */
 
 #intro.section {
-  background: #a7ffeb repeat;
+  background: #1065cd repeat;
   position: relative;
 }
 
@@ -351,12 +351,12 @@ h3 {
   border-bottom: 5px solid #24305e;
 }
 
-#intro.section .teal {
+#intro.section .blue {
   padding: 0 10px;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(15, 104, 182, 0.4);
   height: 100%;
   left: 0;
   position: absolute;
@@ -367,7 +367,7 @@ h3 {
 .waves-effect.waves-blue .waves-ripple {
   /* The alpha value allows the text and background color
    of the button to still show through. */
-  background-color: rgba(33, 150, 243, 0.2);
+  background-color: rgba(21, 139, 236, 0.2);
 }
 
 .card {
@@ -473,7 +473,7 @@ a.hoverline {
 } */
 
 a.hoverline:hover {
-  border-bottom: 3px solid #004d40 !important;
+  border-bottom: 3px solid #1565c0 !important;
 }
 
 #skills .card.large {
@@ -546,23 +546,23 @@ small {
   color: #666 !important;
 }
 
-/* main .teal-text */
+/* main .blue-text */
 
-.teal-text {
-  color: #008073 !important;
+.blue-text {
+  color: #1565c0 !important;
 }
 
-/* .teal-text {
+/* .blue-text {
   color: #0b5e86 !important;
 } */
 
-/* .teal */
+/* .blue */
 
-.teal {
-  background-color: #008073 !important;
+.blue {
+  background-color: #005ccb !important;
 }
 
-/* .teal {
+/* .blue {
   background-color: #00695c !important;
 } */
 
