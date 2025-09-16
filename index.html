@@ -454,9 +454,22 @@
     <section id="projects" class="section scrollspy">
       <h3 class="page-title white-text blue">Projects</h3>
       <div class="container">
+        <div class="row" id="recent-projects">
+        </div>
         <div class="row">
-
-          <div class="col s12 m6 l4">
+          <div class="col s12 center-align">
+            <button id="load-more-projects" class="btn waves-effect waves-light blue" style="margin-top: 24px;">
+              Load More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Project string
+      const projectCards = [
+        // Project 1: Elcano
+        `<div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="course selection app" src="/assets/img/elcano-ss.png" style="height: 100%; width: 100%" class="activator" />
@@ -478,8 +491,6 @@
                   <li>Filter and search for courses by code, name, or requirements.</li>
                   <li>Drag and drop courses to organize your academic plan by semester.</li>
                   <li>Export your course plan for easy sharing or future reference.</li>
-
-
                 </ul>
                 <div class="card-action">
                   <a aria-label="Visit " href="https://elcano.ictrl.ca/" target="_blank" data-position="top"
@@ -493,9 +504,9 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <div class="col s12 m6 l4">
+          </div>`,
+        // Project 2: Fintorch
+        `<div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="fintorch app" src="/assets/img/fintorch-ss.jpeg" style="height: 100%; width: 100%" class="activator" />
@@ -518,7 +529,6 @@
                   <li>Use NLP techniques via OpenAI's GPT model to analyze financial data.</li>
                   <li>Visualize financial data with an interactive interface.</li>
                   <li>Export financial data for easy sharing or future reference.</li>
-
                 </ul>
                 <div class="card-action">
                   <a aria-label="Visit " href="https://fintorch.ca/" target="_blank" data-position="top"
@@ -532,10 +542,9 @@
                 </div>
               </div>
             </div>
-          </div>
-
-          <!-- AR/VR Project -->
-          <div class="col s12 m6 l4">
+          </div>`,
+        // Project 3: Surgical Experience Simulator
+        `<div class="col s12 m6 l4">
             <div class="card medium">
               <div class="card-image waves-effect waves-block waves-light">
                 <img alt="Screenshot of web app" src="/assets/img/sed-lab.webp"
@@ -557,8 +566,6 @@
                   <li><b>Tools:</b> C, Unity, Virtual Reality (VR) Hardware</li>
                   <li>Developed an immersive VR environment simulating Knee Replacement Surgery procedures.</li>
                   <li>Conducted usability testing with 16 participants under REB protocol, resulting in a 25% improvement in procedural understanding after VR engagement.</li>
-
-
                 </ul>
                 <div class="card-action">
                   <a aria-label="Visit Blog website" href="https://www.uoftsedlab.com/" target="_blank" data-position="top"
@@ -572,11 +579,33 @@
                 </div>
               </div>
             </div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
+          </div>`
+      ];
+
+      let projectsShown = 1;
+
+      function renderProjects() {
+        const recentProjectsDiv = document.getElementById('recent-projects');
+        recentProjectsDiv.innerHTML = projectCards.slice(0, projectsShown).join('');
+
+        const loadMoreBtn = document.getElementById('load-more-projects');
+        if (projectsShown >= projectCards.length) {
+          loadMoreBtn.style.display = 'none';
+        } else {
+          loadMoreBtn.style.display = 'inline-block';
+        }
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        renderProjects();
+        document.getElementById('load-more-projects').addEventListener('click', function() {
+          if (projectsShown < projectCards.length) {
+            projectsShown += 1;
+            renderProjects();
+          }
+        });
+      });
+    </script>
 
     <!-- Fifth Section: Skills -->
     <section id="skills" class="section scrollspy">
