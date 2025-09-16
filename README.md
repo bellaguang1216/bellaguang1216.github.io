@@ -20,7 +20,7 @@
 ### Activity 2 Screenshots
 <p align="center">
   <kbd><img src="examples/ssOfRepo2.png"></kbd>
-  <kbd><img src="examples/ssOfSite.png"></kbd>
+  <kbd><img src="examples/ssOfSite2.png"></kbd>
 </p>
 
 ### Website Preview
