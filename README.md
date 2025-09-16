@@ -22,9 +22,7 @@
   <kbd>
     <img src="examples/ssOfRepo2.png">
   </kbd>
-</p>
 
-<p align="center"> 
   <kbd>
     <img src="examples/ssOfSite.png">
   </kbd>
